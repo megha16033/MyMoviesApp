@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="false"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:background="@drawable/movieimage3"
+        android:scaleType = "center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/todo"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:textColor="#25383C"
+            android:layout_width="match_parent"
+            android:textSize="30sp" />
+
+        <Button
+            android:background="#ff3ffa4b"
+            android:id="@+id/watched"
+            android:layout_below="@+id/todo"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:layout_width="match_parent"
+            android:onClick="onWatched"
+            android:text="@string/Watched" />
+
+        <Button
+            android:background="#fff8fa5e"
+            android:id="@+id/towatch"
+            android:layout_below="@id/watched"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:layout_width="match_parent"
+            android:onClick="onToWatch"
+            android:text="@string/ToWatched" />
+
+        <Button
+            android:background="#fffa80d9"
+            android:id="@+id/back"
+            android:layout_below="@id/towatch"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:layout_width="match_parent"
+            android:onClick="onBackMovie"
+            android:text="Back" />
+    </RelativeLayout>
+</ScrollView>

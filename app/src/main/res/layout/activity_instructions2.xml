@@ -1,0 +1,47 @@
+<ScrollView
+    android:fillViewport="false"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.megha.moviesdata2.Instructions"
+        android:background="@drawable/movieimage4"
+        android:scaleType = "centerCrop">
+
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:textColor="#25383C"
+            android:text="@string/Instructions"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/instructionslist"
+            android:layout_height="match_parent"
+            android:layout_margin="80dp"
+            android:scrollHorizontally="true"
+            android:layout_below="@+id/instructions"
+            android:layout_width="wrap_content"
+            android:textColor="#fffa2842"
+            android:textSize="25sp" />
+
+        <Button
+            android:background="#fffa80d9"
+            android:id="@+id/back"
+            android:layout_below="@id/instructionslist"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:layout_width="match_parent"
+            android:onClick="onBack"
+            android:text="Back" />
+
+    </RelativeLayout>
+</ScrollView>
