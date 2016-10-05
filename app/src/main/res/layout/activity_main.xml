@@ -112,19 +112,19 @@
 
         <Button
             android:background="#ff97e4fa"
-            android:id="@+id/reset"
+            android:id="@+id/delete"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/fantasy"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:onClick="onReset"
-            android:text="@string/Reset" />
+            android:text="Delete" />
 
         <Button
             android:background="#ff97e4fa"
             android:id="@+id/instructions"
-            android:layout_below="@+id/reset"
+            android:layout_below="@+id/delete"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_width="wrap_content"

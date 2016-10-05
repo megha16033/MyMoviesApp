@@ -80,4 +80,10 @@ public class MovieDatabase extends SQLiteOpenHelper {
         }
         return movieList;
     }
+
+    public void movieDelete(String movie)
+    {
+        getWritableDatabase().execSQL("Delete from movies where name =\"" + movie+"\"");
+
+    }
 }

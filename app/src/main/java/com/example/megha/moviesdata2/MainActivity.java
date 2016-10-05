@@ -107,16 +107,8 @@ public class MainActivity extends Activity {
 
    //Calling function for deleting all tables and sharedpreferences also
     public void onReset(View view) {
-        MovieDatabase mb = new MovieDatabase(this);
-        mb.onReset(mb.getWritableDatabase());
-        sharedpreferences = getSharedPreferences("MyMovies", 0);
-        SharedPreferences.Editor editor = getSharedPreferences("MyMovies", 0).edit();
-        editor.putInt("watched", 0);
-        editor.putInt("toWatch", 0);
-        editor.commit();
-        Toast.makeText(this, "Database has been deleted",
-                Toast.LENGTH_SHORT).show();
-        Intent resetIntent = new Intent(this, MainActivity.class);
+//
+        Intent resetIntent = new Intent(this, DeleteActivity.class);
         startActivity(resetIntent);
     }
 

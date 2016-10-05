@@ -31,6 +31,10 @@
             android:name=".Instructions"
             android:label="@string/title_activity_instructions" >
         </activity>
+        <activity
+            android:name=".DeleteActivity"
+            android:label="@string/title_activity_delete" >
+        </activity>
     </application>
 
 </manifest>
